@@ -1,0 +1,111 @@
+.portfolio{
+    width: 100vw;
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    color: #fff;
+    @include media(){
+        @include flexbox(center,center,column)
+    }
+}
+
+.portfolio-headings{
+    width: 100vw;
+    padding: 5em;
+    
+}
+
+.portfolio-headings h2{
+    font-size: 2.5em;
+    
+    
+    
+
+}
+
+.portfolio .container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5em;
+    @include media(){
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+.card{
+    width: 300px;
+    background-color: #2b3050;
+    color: #fff;
+    margin: 1em;
+
+    
+
+    &:last-child{
+        margin-bottom: 30px;
+    }
+}
+
+.card__img1{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/GamerSCerberus.jpg);
+    background-size: cover;
+}
+
+.card__img2{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/ApiPeliculas.jpg);
+    background-size: cover;
+}
+
+.card__img3{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/chatbot.jpg);
+    background-size: cover;
+}
+
+.card__title{
+    padding: 20px;
+}
+
+.card__projects-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__projects-links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.card__projects-links i {
+    font-size: 1.5em;
+}
+
+.card .project-details{
+    align-self: center;
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+}
+
+.card .project-details a{
+    text-decoration: none;
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}

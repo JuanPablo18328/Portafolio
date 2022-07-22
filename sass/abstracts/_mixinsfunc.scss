@@ -1,0 +1,12 @@
+@mixin flexbox($justify,$align,$direccion){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direccion;
+}
+
+@mixin media($width:768px){
+    @media (max-width:$width) {
+        @content;
+    }
+}

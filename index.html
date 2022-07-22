@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Pablo Garcia</title>
+  <link rel="shortcut icon" href="./img/invader-solid-24.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navbar">
+        <div class="brand">
+          <h2>J<span>P</span></h2>
+        </div>
+        
+        <ul class="menu">
+          <li><a class="active nav__item" href="#">Inicio</a></li>
+          <li><a class="nav__item" href="#about">Sobre mi</a></li>
+          <li><a class="nav__item" href="#portfolio">Portafolio</a></li>
+          <li><a class="nav__item" href="#contact">Contactame</a></li>
+        </ul>
+        <button class="burguer"><i class='bx bx-menu icon_menu'></i></button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="info-content">
+        <h1 class="animate__heartBeat name">Soy <span>Juan</span> Pablo!</h1>
+        <h2><span class="auto-input"></span></h2>
+        
+          <button id="btn-download" class="btn download-cv">Descargar CV</button>
+        </a>
+      </div>
+      <img src="./img/me.png" alt="juan pablo picture">
+    </main>
+  </div>
+
+  <div  id="about" data-aos="fade-up" data-aos-easing="ease-in-out" class="about">
+    <div class="sea">
+      <div class="circle-wrapper">
+        <div class="bubble"></div>
+        <div class="submarine-wrapper">
+            <div class="submarine-body">
+                <div class="window"></div>
+                <div class="engine"></div>
+                <div class="light"></div>
+            </div>
+            <div class="helix"></div>
+            <div class="hat">
+              <div class="leds-wrapper">
+                  <div class="periscope"></div>
+                  <div class="leds"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-info">
+      <h2>SOBRE MI...</h2>
+      <div class="divider"></div>
+      <p>INTERESADO EN EL AREA DE FRONTEND, BASES DE DATOS Y DESARROLLO WEB <br>ME RELACIONO BASTANTE BIEN CON MI ENTORNO. <br>BUSCO APRENDER Y ADQUIRIR NUEVOS CONOCIMIENTOS EN EL AREA TECNOLOGICA.</p>
+      <button class="download-cv btn">Ver mas...</button>
+    </div>
+  </div>
+  
+  <div id="portfolio" class="portfolio">
+    <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="portfolio-headings">
+      <h2>MI PORTAFOLIO</h2>
+      <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="divider"></div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-easing="ease-in-out" class="container">
+      <div class="card">
+        <div class="card__img1"></div>
+        <div class="card__title">
+          <h2>GamerSCerberus</h2>
+        </div>
+        <div class="card__projects-links">
+          <a href="https://github.com/JuanPablo18328/GamerSCerberus" target="_blank" ><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/JuanPablo18328/GamerSCerberus"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="project-details-content">
+          <button class="project-details download-cv btn">
+          <a href="">Detalles</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img2"></div>
+        <div class="card__title">
+          <h2>Consumo Api</h2>
+        </div>
+        <div class="card__projects-links">
+          <a href="https://github.com/JuanPablo18328/ConsumirAPI" target="_blank" ><i class="fa-brands fa-github"></i></a>
+          
+          <a href="https://github.com/JuanPablo18328/ConsumirAPI"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="project-details-content">
+          <button class="project-details download-cv btn">
+          <a href="">Detalles</a>
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__img3"></div>
+        <div class="card__title">
+          <h2>Chatbot</h2>
+        </div>
+        <div class="card__projects-links">
+          <a href="https://github.com/JuanPablo18328/chatbot" target="_blank" ><i class="fa-brands fa-github"></i></a>
+          
+          <a href="https://github.com/JuanPablo18328/chatbot"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <div class="project-details-content">
+          <button class="project-details download-cv btn">
+          <a href="">Detalles</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-section">
+    <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="contact-headings">
+      <h2>CONTACTAME</h2>
+      <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="divider"></div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="container-contact">
+       <img src="./img/programando.png" alt="juan">
+      <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="contact-form">
+        <h4>Enviame mensaje...</h4>
+        <form class="form"> 
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Escribe aqui tu mensaje..."></textarea>
+          <button type="submit" class="btn-submit btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h2>Juan Pablo Garcia</h2>
+    </div>
+    <div class="social-network">
+      <a href="https://github.com/JuanPablo18328" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/juan-pablo-garcia-hernandez18" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <h5>copyright © 2022</h5>
+  </footer>
+  
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/d29cc39ef4.js" crossorigin="anonymous"></script>
+</body>
+</html>

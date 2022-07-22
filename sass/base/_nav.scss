@@ -1,0 +1,165 @@
+@import './abstracts/variables';
+@import '../abstracts/mixinsfunc';
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    color: #fff;
+    
+}
+
+
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    @include media(){
+        // padding: 2em 0;
+        justify-content: space-between;
+    }
+    position: relative;
+    align-items: center;
+    
+}
+
+.brand{
+    margin-top: -7px;
+    @include media(){
+        margin-left: 3px;
+    }
+}
+
+.brand span{
+    color: aqua;
+}
+
+
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    @include media(){
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #2b3050;
+        transform: translate(-100%);
+        transition: .5s;
+        @include flexbox(space-around,center,column);
+    }
+}
+
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active{
+    color: $colorPrimary;
+}
+
+
+
+
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+.nav__item{
+    position: relative;
+    width: 0;
+}
+
+
+
+
+
+.burguer{
+    border: none;
+    outline: none;
+    background: transparent;
+    display: none;
+    @include media(){
+        display: block;
+    }
+}
+
+.icon_menu{
+    font-size: 2rem;
+    color: #fff;
+}
+ 
+.menu__active{
+    transform: none;
+    
+}
+
+.header__active{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0,0.5);
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: #fff;
+    transition: 2s;
+    color: #000;
+    
+    a{
+        color: #000;
+    }
+
+    .menu .active{
+        color: #000;
+    }
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    //background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    background: aqua;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.menu[data-animation="to-left"] a::before {
+    transform-origin: right;
+}
+
+.menu[data-animation="center"] a::before {
+    transform-origin: center;
+}
+
+.menu[data-animation="bonus"] a::before {
+    transform-origin: right;
+}
+
+.menu[data-animation="bonus"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
