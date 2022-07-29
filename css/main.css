@@ -262,6 +262,12 @@ h1 span {
   background-image: url(../img/calculadora.jpg);
   background-size: cover; }
 
+.card__img5 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/app-tareas.jpg);
+  background-size: cover; }
+
 .card__title {
   padding: 20px; }
 
