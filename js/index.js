@@ -1,3 +1,4 @@
+/* libreria auto escritura */
 let typed = new Typed(".auto-input",{
     strings: ["{Desarrollador", "Frontend};"],
     typeSpeed: 100,
@@ -5,7 +6,7 @@ let typed = new Typed(".auto-input",{
     loop: true
 })
 
-
+/* descarga cv */
 const boton = document.getElementById('btn-download')
 
 boton.addEventListener('click', ()=>{
@@ -13,15 +14,57 @@ boton.addEventListener('click', ()=>{
 })
 
 
-const menu = document.querySelector('.menu'), burguer = document.querySelector('.burguer')
+/* menu hamburguesa */
 
-burguer.addEventListener('click',()=>{
+document.querySelector(".bars__menu").addEventListener("click", animateBars);
+
+const line1__bars = document.querySelector(".line1__bars-menu");
+const line2__bars = document.querySelector(".line2__bars-menu");
+const line3__bars = document.querySelector(".line3__bars-menu");
+const menu = document.querySelector('.menu')
+function animateBars(){
+    line1__bars.classList.toggle("activeline1__bars-menu");
+    line2__bars.classList.toggle("activeline2__bars-menu");
+    line3__bars.classList.toggle("activeline3__bars-menu");
+
     menu.classList.toggle('menu__active')
-})
+}
 
 
+/* animacion scroll */
 
 window.addEventListener("scroll",()=>{
     const header = document.querySelector('.header')
     header.classList.toggle("header__active",window.scrollY>0)
 })
+
+/* botones carrusel */
+window.addEventListener('load', function(){
+    new Glider(this.document.querySelector('.container__cards'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.carousel__indicadores',
+        arrows: {
+            prev: '.carousel__anterior',
+            next: '.carousel__siguiente'
+        },
+        responsive: [
+            {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+            }
+            }
+        ]
+    });
+
+});
+

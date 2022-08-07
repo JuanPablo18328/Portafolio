@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
 
 </head>
 <body>
@@ -27,7 +28,11 @@
           <li><a class="nav__item" href="#portfolio">Portafolio</a></li>
           <li><a class="nav__item" href="#contact">Contactame</a></li>
         </ul>
-        <button class="burguer"><i class='bx bx-menu icon_menu'></i></button>
+        <div class="bars__menu">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
       </nav>
     </header>
 
@@ -76,9 +81,12 @@
       <h2>MI PORTAFOLIO</h2>
       <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="divider"></div>
     </div>
-
+    
     <div data-aos="fade-up" data-aos-easing="ease-in-out" class="container">
-      <div class="card">
+      <button class="carousel__anterior" id="btn-left"><i class='bx bx-chevron-left' ></i></button>      
+      <div class="container__cards">
+        
+          <div class="card">
         <div class="card__img1"></div>
         <div class="card__title">
           <h2>GamerSCerberus</h2>
@@ -92,74 +100,96 @@
           <a href="">Detalles</a>
           </button>
         </div>
+          </div>
+          <div class="card">
+            <div class="card__img2"></div>
+            <div class="card__title">
+              <h2>Peliculas Top</h2>
+            </div>
+            <div class="card__projects-links">
+              <a href="https://github.com/JuanPablo18328/ConsumirAPI" target="_blank" ><i class="fa-brands fa-github"></i></a>
+              
+              <a href="https://github.com/JuanPablo18328/ConsumirAPI"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv btn">
+              <a href="">Detalles</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img3"></div>
+            <div class="card__title">
+              <h2>Chatbot</h2>
+            </div>
+            <div class="card__projects-links">
+              <a href="https://github.com/JuanPablo18328/chatbot" target="_blank" ><i class="fa-brands fa-github"></i></a>
+              
+              <a href="https://github.com/JuanPablo18328/chatbot"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv btn">
+              <a href="">Detalles</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img4">
+            </div>
+            <div class="card__title">
+              <h2>Calculadora</h2>
+            </div>
+            <div class="card__projects-links">
+              <a href="https://github.com/JuanPablo18328/CalculadoraReact" target="_blank" ><i class="fa-brands fa-github"></i></a>
+              
+              <a href="https://github.com/JuanPablo18328/CalculadoraReact"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv btn">
+              <a href="">Detalles</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img5">
+            </div>
+            <div class="card__title">
+              <h2>App de Tareas</h2>
+            </div>
+            <div class="card__projects-links">
+              <a href="https://github.com/JuanPablo18328/AppTareas" target="_blank" ><i class="fa-brands fa-github"></i></a>
+              
+              <a href="https://github.com/JuanPablo18328/AppTareas"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv btn">
+              <a href="">Detalles</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img6">
+            </div>
+            <div class="card__title">
+              <h2>Tic-Tac-Toe</h2>
+            </div>
+            <div class="card__projects-links">
+              <a href="https://github.com/JuanPablo18328/tic-tac-toe" target="_blank" ><i class="fa-brands fa-github"></i></a>
+              
+              <a href="https://github.com/JuanPablo18328/tic-tac-toe"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <div class="project-details-content">
+              <button class="project-details download-cv btn">
+              <a href="">Detalles</a>
+              </button>
+            </div>
+          </div>
+        
       </div>
-      <div class="card">
-        <div class="card__img2"></div>
-        <div class="card__title">
-          <h2>Peliculas Top</h2>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/JuanPablo18328/ConsumirAPI" target="_blank" ><i class="fa-brands fa-github"></i></a>
-          
-          <a href="https://github.com/JuanPablo18328/ConsumirAPI"><i class="fa-solid fa-code"></i></a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv btn">
-          <a href="">Detalles</a>
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__img3"></div>
-        <div class="card__title">
-          <h2>Chatbot</h2>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/JuanPablo18328/chatbot" target="_blank" ><i class="fa-brands fa-github"></i></a>
-          
-          <a href="https://github.com/JuanPablo18328/chatbot"><i class="fa-solid fa-code"></i></a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv btn">
-          <a href="">Detalles</a>
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__img4">
-        </div>
-        <div class="card__title">
-          <h2>Calculadora</h2>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/JuanPablo18328/CalculadoraReact" target="_blank" ><i class="fa-brands fa-github"></i></a>
-          
-          <a href="https://github.com/JuanPablo18328/CalculadoraReact"><i class="fa-solid fa-code"></i></a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv btn">
-          <a href="">Detalles</a>
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__img5">
-        </div>
-        <div class="card__title">
-          <h2>App de Tareas</h2>
-        </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/JuanPablo18328/AppTareas" target="_blank" ><i class="fa-brands fa-github"></i></a>
-          
-          <a href="https://github.com/JuanPablo18328/AppTareas"><i class="fa-solid fa-code"></i></a>
-        </div>
-        <div class="project-details-content">
-          <button class="project-details download-cv btn">
-          <a href="">Detalles</a>
-          </button>
-        </div>
-      </div>
+      <button class="carousel__siguiente" id="btn-right"><i class='bx bx-chevron-right'></i></button>
     </div>
+    <div role="tablist" class="carousel__indicadores"></div>
+
   </div>
 
   <div id="contact" class="contact-section">
@@ -197,6 +227,7 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

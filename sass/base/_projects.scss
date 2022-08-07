@@ -8,28 +8,69 @@
 }
 
 .portfolio-headings{
-    width: 100vw;
+    width: 100%;
     padding: 5em;
     
 }
 
 .portfolio-headings h2{
     font-size: 2.5em;
-    
-    
-    
-
 }
 
 .portfolio .container{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 5em;
-    @include media(){
-        grid-template-columns: 1fr;
-        
-    }
+    width: 100%;
+    position: relative;
+}
+
+.container__cards {
+    width: 90%;
+    overflow: hidden;
+}
+
+.carousel__anterior, .carousel__siguiente {
+	position: absolute;
+	display: block;
+    font-size: 50px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: aqua;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover, 
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: 10px;
+}
+
+.carousel__siguiente {
+	right: 10px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: aqua;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
 }
 
 .card{
@@ -77,6 +118,13 @@
     width: 100%;
     height: 150px;
     background-image: url(../img/app-tareas.jpg);
+    background-size: cover;
+}
+
+.card__img6{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/tic-tac-toe.jpg);
     background-size: cover;
 }
 

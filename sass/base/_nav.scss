@@ -9,15 +9,12 @@
     
 }
 
-
-
 .navbar{
     width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 2em;
     @include media(){
-        // padding: 2em 0;
         justify-content: space-between;
     }
     position: relative;
@@ -36,8 +33,6 @@
     color: aqua;
 }
 
-
-
 .menu{
     display: flex;
     width: 50%;
@@ -46,11 +41,11 @@
         position: absolute;
         top: 10vh;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 50vw;
+        height: 80vh;
         background: #2b3050;
         transform: translate(-100%);
-        transition: .5s;
+        transition: 600ms;
         @include flexbox(space-around,center,column);
     }
 }
@@ -68,10 +63,6 @@
     color: $colorPrimary;
 }
 
-
-
-
-
 .nav__label, .nav__input{
     display: none;
 }
@@ -81,29 +72,48 @@
     width: 0;
 }
 
-
-
-
-
-.burguer{
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    display: none;
     border: none;
     outline: none;
-    background: transparent;
-    display: none;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
     @include media(){
-        display: block;
-    }
+         display: block;
+     }
 }
 
-.icon_menu{
-    font-size: 2rem;
-    color: #fff;
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: aqua;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
 }
+
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px); 
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
  
 .menu__active{
     transform: none;
     
 }
+
 
 .header__active{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0,0.5);
@@ -113,7 +123,7 @@
     z-index: 1;
     top: 0;
     background: #fff;
-    transition: 2s;
+    transition: 400ms;
     color: #000;
     
     a{
@@ -121,7 +131,7 @@
     }
 
     .menu .active{
-        color: #000;
+        color: rgb(7, 34, 75);
     }
 }
 
@@ -132,7 +142,6 @@
     left: 0;
     width: 100%;
     height: 2px;
-    //background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
     background: aqua;
     z-index: 1;
     transform: scaleX(0);
@@ -143,8 +152,6 @@
 .menu a:hover::before {
     transform: scaleX(1);
 }
-
-
 
 .menu[data-animation="to-left"] a::before {
     transform-origin: right;

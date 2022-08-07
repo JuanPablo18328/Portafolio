@@ -55,11 +55,11 @@ body::-webkit-scrollbar-thumb {
       position: absolute;
       top: 10vh;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 50vw;
+      height: 80vh;
       background: #2b3050;
       transform: translate(-100%);
-      transition: .5s;
+      transition: 600ms;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -83,18 +83,36 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 0; }
 
-.burguer {
+.bars__menu {
+  width: 30px;
+  height: 30px;
+  display: none;
   border: none;
   outline: none;
-  background: transparent;
-  display: none; }
+  transform: translate(-50%, -50%);
+  cursor: pointer; }
   @media (max-width: 768px) {
-    .burguer {
+    .bars__menu {
       display: block; } }
 
-.icon_menu {
-  font-size: 2rem;
-  color: #fff; }
+.bars__menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: aqua;
+  margin-top: 6px;
+  transform-origin: 0px 100%;
+  transition: all 300ms; }
+
+.activeline1__bars-menu {
+  transform: rotate(45deg) translate(-2px, 1px); }
+
+.activeline2__bars-menu {
+  opacity: 0;
+  margin-left: -30px; }
+
+.activeline3__bars-menu {
+  transform: rotate(-45deg) translate(-4px, 2px); }
 
 .menu__active {
   transform: none; }
@@ -107,12 +125,12 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   top: 0;
   background: #fff;
-  transition: 2s;
+  transition: 400ms;
   color: #000; }
   .header__active a {
     color: #000; }
   .header__active .menu .active {
-    color: #000; }
+    color: #07224b; }
 
 .menu a::before {
   content: '';
@@ -215,20 +233,58 @@ h1 span {
       flex-direction: column; } }
 
 .portfolio-headings {
-  width: 100vw;
+  width: 100%;
   padding: 5em; }
 
 .portfolio-headings h2 {
   font-size: 2.5em; }
 
 .portfolio .container {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 5em; }
-  @media (max-width: 768px) {
-    .portfolio .container {
-      grid-template-columns: 1fr; } }
+  width: 100%;
+  position: relative; }
+
+.container__cards {
+  width: 90%;
+  overflow: hidden; }
+
+.carousel__anterior, .carousel__siguiente {
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: aqua;
+  opacity: 20%; }
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%; }
+
+.carousel__anterior {
+  left: 10px; }
+
+.carousel__siguiente {
+  right: 10px; }
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: aqua;
+  opacity: .2;
+  border-radius: 0; }
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: .5; }
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1; }
 
 .card {
   width: 300px;
@@ -266,6 +322,12 @@ h1 span {
   width: 100%;
   height: 150px;
   background-image: url(../img/app-tareas.jpg);
+  background-size: cover; }
+
+.card__img6 {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/tic-tac-toe.jpg);
   background-size: cover; }
 
 .card__title {
