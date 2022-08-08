@@ -111,9 +111,17 @@
  
 .menu__active{
     transform: none;
-    
+    color: #000;
 }
 
+.menu__active a {
+    color: #000;
+}
+
+
+.header {
+    transition: 800ms;
+}
 
 .header__active{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0,0.5);
@@ -123,16 +131,13 @@
     z-index: 1;
     top: 0;
     background: #fff;
-    transition: 400ms;
+    transition: 600ms;
+    opacity: 90%;
     color: #000;
-    
-    a{
+    a {
         color: #000;
     }
 
-    .menu .active{
-        color: rgb(7, 34, 75);
-    }
 }
 
 .menu a::before {

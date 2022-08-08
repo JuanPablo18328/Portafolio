@@ -115,7 +115,14 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(-45deg) translate(-4px, 2px); }
 
 .menu__active {
-  transform: none; }
+  transform: none;
+  color: #000; }
+
+.menu__active a {
+  color: #000; }
+
+.header {
+  transition: 800ms; }
 
 .header__active {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
@@ -125,12 +132,11 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   top: 0;
   background: #fff;
-  transition: 400ms;
+  transition: 600ms;
+  opacity: 90%;
   color: #000; }
   .header__active a {
     color: #000; }
-  .header__active .menu .active {
-    color: #07224b; }
 
 .menu a::before {
   content: '';
@@ -444,7 +450,7 @@ h1 span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
-  height: 630px;
+  height: 500px;
   align-items: center; }
   @media (max-width: 768px) {
     .about {
