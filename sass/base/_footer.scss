@@ -11,12 +11,18 @@
 .footer-content h2{
     font-size: 3em;
     color: #fff;
+    @include media(){
+        font-size: 1.5em;
+    }
 }
 
 .footer-content h5,
 .social-network i{
     color: #fff;
     font-size: 1.5em;
+    @include media(){
+        font-size: 0.8em;
+    }
 }
 
 .social-network{

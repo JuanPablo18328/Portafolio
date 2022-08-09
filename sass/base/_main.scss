@@ -19,6 +19,10 @@
 
 h1{
     font-size: 3em;
+    @include media(){
+        @include flexbox(center,center,column); 
+    }
+        
     
 }
 

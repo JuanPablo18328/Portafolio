@@ -111,11 +111,11 @@
  
 .menu__active{
     transform: none;
-    color: #000;
+    color: #fff;
 }
 
 .menu__active a {
-    color: #000;
+    color: #fff;
 }
 
 
@@ -130,12 +130,11 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    background: #fff;
+    background: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
     transition: 600ms;
-    opacity: 90%;
-    color: #000;
+    color: #fff;
     a {
-        color: #000;
+        color: #fff;
     }
 
 }

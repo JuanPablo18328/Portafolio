@@ -27,7 +27,9 @@
 }
 .contact-headings h2{
     font-size: 2.5em;
-    
+    @include media(){
+        font-size: 1.5em;
+    }
 }
 
 .contact-headings{
@@ -40,7 +42,14 @@
     width: 100vw;
     & h4{
         text-align: center;
+        @include media(){   
+        text-align: left;
+        padding-left: 50px;
     }
+
+    }
+
+    
 }
 
 
@@ -51,11 +60,14 @@
     flex-direction: column;
     width: 30vw;
     margin-top: 2em;
-    @include media(){
+    @include media(){   
+        display: flex;
+        flex-wrap: wrap;
         
-        margin: 0 auto;
-        
+        justify-content: center;
+        padding-left: 30px;
     }
+    
 }
 
 .form input{
