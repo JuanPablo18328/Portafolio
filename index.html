@@ -202,12 +202,20 @@
        <img src="./img/programando.png" alt="juan">
       <div class="contact-form">
         <h4>Enviame un mensaje...</h4>
-        <form class="form"> 
-          <input type="text" placeholder="Nombre">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Escribe aqui tu mensaje..."></textarea>
-          <button type="submit" class="btn-submit btn">Enviar mensaje</button>
+        <form class="form" id="form"> 
+          <input type="text" placeholder="Nombre" name="name">
+          <input type="email" placeholder="Email" name="email">
+          <textarea placeholder="Escribe aqui tu mensaje..." name="message"></textarea>
+          <button type="submit" class="btn-submit btn" id="button" value="Enviar Email">Enviar Email</button>
         </form>
+
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+
+        <script type="text/javascript">
+          emailjs.init('1tuXpsztvvOeU6LFl')
+        </script>
       </div>
     </div>
   </div>
