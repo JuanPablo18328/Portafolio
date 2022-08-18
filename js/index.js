@@ -84,10 +84,28 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviar Email';
-      alert('Mensaje enviado correctamente');
+      Swal.fire({
+        title: 'Mensaje enviado',
+        icon: 'success',
+        backdrop: false,
+        timer: 3000,
+        timerProgressBar: true,
+        toast: true,
+        position: 'bottom-end',
+        showConfirmButton: false
+      })
+      setInterval("location.reload()", 4000);
     }, (err) => {
       btn.value = 'Enviar Email';
-      alert(JSON.stringify(err));
+      Swal.fire({
+          title: `Error: ${JSON.stringify(err)}`,
+          icon: 'error',
+          backdrop: false,
+          timer: 3000,
+          timerProgressBar: true,
+          toast: true,
+          position: 'bottom-end',
+          showConfirmButton: false
+      })
     });
 });
-
