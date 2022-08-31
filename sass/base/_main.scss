@@ -1,7 +1,7 @@
 .main{
     margin: 0 auto;
     width: 80vw;
-    height: 80vh;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -9,7 +9,7 @@
     @include media(){
         grid-template-columns: 1fr;
         width: 100vw;
-        height: 50vh;
+        height: auto;
         
     }
     
@@ -19,6 +19,7 @@
 
 h1{
     font-size: 3em;
+    color: #fff;
     @include media(){
         @include flexbox(center,center,column); 
     }
@@ -26,29 +27,21 @@ h1{
     
 }
 
-h1 span{
-    color: aqua;
-}
-
-.download-cv{
-    padding: 10px 20px;
-    background-color: aqua;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
-
-    @include media(){
-        margin-top: 6px;
-    }
-    
-}
-
 .name{
     @include media(){
         margin-bottom: 5px;
     }
+}
+
+.info-content .welcome {
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    width: 280px;
+    height: 40px;
+    border: 1px solid #fff;
+    padding: 10px;
+
 }
 
 .info-content{
@@ -59,19 +52,28 @@ h1 span{
 }
 
 
-
+.btn {
+    margin-top: 80px;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    background: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
 .btn:hover{
     color: #fff;
-    background: rgb(26, 147, 145);
+    transform: scale(1.2);
     box-shadow: 1px 3px 11px -5px rgba(0, 0, 0, 0.69);
-    transition: 1.5;
+    transition: 1.5s;
 }
 
 .main img{
-    width: 350px;
-    border: 7px solid aqua;
-    height: 500px;
-
+    width: 450px;
+    height: 530px;
+    animation: move 3s ease alternate infinite;
      @include media(){
         margin: 3rem auto;
         
@@ -79,4 +81,14 @@ h1 span{
         height: 300px;
         object-fit: cover;
     }
-}   
+}
+
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+

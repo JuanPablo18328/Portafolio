@@ -5,7 +5,10 @@
     align-items: center;
     width: 100vw;
     height: 200px;
-    background-color: #2b3050;
+    background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 25, 51, 1) 35%, rgba(24, 20, 53, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer-content h2{
@@ -30,18 +33,17 @@
     justify-content: space-evenly;
     width: 300px;
     margin-top: 1em;
+
+    a:hover {
+        transition: all 1.2s ease;
+        transform: scale(1.2);
+    }
 }
 
 
-.social-network a{
-    text-decoration: none;
-    color: #191c32;
-}
 
-.social-network a:hover{
-    color: #fff;
-    
-}
+
+
 
 .footer h5{
     padding-top: 1em;

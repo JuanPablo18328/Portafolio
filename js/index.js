@@ -1,6 +1,6 @@
 /* libreria auto escritura */
 let typed = new Typed(".auto-input",{
-    strings: ["{Desarrollador", "Frontend};"],
+    strings: ["I'm Juan Pablo"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

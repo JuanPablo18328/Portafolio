@@ -1,6 +1,6 @@
 .portfolio{
     width: 100vw;
-    background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+    background-image: url('../../img/banner-bg.png');
     color: #fff;
     @include media(){
         @include flexbox(center,center,column);
@@ -13,6 +13,15 @@
     
 }
 
+.project-details {
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    text-transform: uppercase;
+}
+
+
+
 .portfolio-headings h2{
     font-size: 2.5em;
     @include media(){
@@ -22,6 +31,7 @@
 
 .portfolio .container{
     width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -42,7 +52,7 @@
 	line-height: 30px;
 	text-align: center;
 	background: none;
-	color: aqua;
+	color: #3F5EFB;
 	opacity: 20%;
 }
 
@@ -64,7 +74,7 @@
 	display: block;
 	width: 30px;
 	height: 4px;
-	background: aqua;
+	background: #3F5EFB;
 	opacity: .2;
 	border-radius: 0;
 }
@@ -79,7 +89,8 @@
 
 .card{
     width: 300px;
-    background-color: #2b3050;
+    background: rgba(58, 25, 51, 1);
+    
     color: #fff;
     margin: 1em;
 
@@ -144,6 +155,11 @@
 .card__projects-links a{
     color: #fff;
     text-decoration: none;
+
+    &:hover {
+        transition: all 1.2s ease;
+        transform: scale(1.2);
+    }
 }
 
 .card__projects-links i {
