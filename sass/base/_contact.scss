@@ -1,6 +1,7 @@
 .contact-section{
     padding: 3em;
     width: 100vw;
+    height: auto;
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     color: #fff;
     
@@ -12,7 +13,11 @@
     
     @include media(){
         grid-template-columns: repeat(1,1fr);
+        
+    }
 
+    @include mediaTablet(){
+        height: 400px;
     }
 
     img {
@@ -23,6 +28,13 @@
         @include media() {
             display: none;
         }
+
+        @include mediaTablet(){
+            position: relative;
+            opacity: 0.3;
+        }
+
+        @include mediaMin
     }
     
 }
@@ -35,8 +47,22 @@
 
         @include media(){
             font-size: 1.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
     }
+
+    @include mediaTablet(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
 
 
@@ -50,6 +76,19 @@
         padding-left: 50px;
     }
 
+        @include mediaTablet() {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 36%;
+        }
+
+        @include mediaMin() {
+            left: 12%;
+        }
+
     }
 
     .form {
@@ -61,9 +100,23 @@
         @include media() {
             display: flex;
             flex-wrap: wrap;
-    
+            align-items: center;
             justify-content: center;
             padding-left: 30px;
+        
+        }
+
+        @include mediaTablet(){
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 36%;
+        }
+
+        @include mediaMin(){
+            left: 12%;
         }
     
         input {

@@ -2,6 +2,7 @@
 .about{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     width: 100vw;
     height: 500px;
     align-items: center;
@@ -14,6 +15,7 @@
         display: block;
         height: auto;
     }
+
 
     img {
         width: 100%;
@@ -33,7 +35,15 @@
     h2 {
 
         font-size: 2.5em;
-    }   
+    } 
+    
+    @include mediaTablet() {
+        grid-row: 2/2;
+        grid-template-columns: 1fr;
+        display: block;
+        height: auto;
+
+    }
 }
 
 .divider{
@@ -41,5 +51,5 @@
     width: 60px;
     background-color: #3F5EFB;
     margin-top: 5px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }

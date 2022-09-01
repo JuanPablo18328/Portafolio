@@ -5,7 +5,21 @@
     flex-direction: $direccion;
 }
 
-@mixin media($width:768px){
+@mixin media($width:774px){
+    @media (max-width:$width) {
+        @content;
+    }
+}
+
+@mixin mediaTablet($width: 1000px) {
+    @media (max-width:$width) {
+        @content;
+    }
+}
+
+
+
+@mixin mediaMin($width: 330px) {
     @media (max-width:$width) {
         @content;
     }

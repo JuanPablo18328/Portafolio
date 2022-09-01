@@ -10,6 +10,9 @@ $color2: #D93A54;
 .sea {
     margin: 40px auto 0 auto;
     overflow: hidden;
+
+    
+    
     
     .bubble {
         position: absolute;
@@ -55,6 +58,12 @@ $color2: #D93A54;
         
         @include media(){
             margin-left: auto;
+            
+        }
+
+        @include mediaTablet() {
+            
+                    
         }
     }
     

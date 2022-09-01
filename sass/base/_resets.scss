@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  // border: 1px solid red;
 }
 html{
     scroll-behavior: smooth;
@@ -24,10 +25,10 @@ button {
 
 body::-webkit-scrollbar {
   width: 12px;
-  background: #fff;
+  background: #766bdb;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #2b3050;
+  background: #573fa8;
   border-radius: 10px;
 }
