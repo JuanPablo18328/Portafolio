@@ -23,10 +23,10 @@
         </div>
         
         <ul class="menu">
-          <li><a class="nav__item" href="#">Inicio</a></li>
-          <li><a class="nav__item" href="#about">Sobre mi</a></li>
-          <li><a class="nav__item" href="#portfolio">Portafolio</a></li>
-          <li><a class="nav__item" href="#contact">Contactame</a></li>
+          <li><a class="nav__item" href="#">Home</a></li>
+          <li><a class="nav__item" href="#about">About me</a></li>
+          <li><a class="nav__item" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav__item" href="#contact">Contact me</a></li>
         </ul>
         <div class="bars__menu">
           <span class="line1__bars-menu"></span>
@@ -41,14 +41,14 @@
         <h3 class="animate__heartBeat name welcome">Welcome to my Portfolio</h3>
         <h1>Hi! <span class="auto-input"></span></h1>
 
-        <button id="btn-download" class="btn">Descargar CV <i class='bx bx-download'></i></button>
+        <button id="btn-download" class="btn">Download CV <i class='bx bx-download'></i></button>
       </div>
         <img class="" src="./img/header-img.svg" alt="juan pablo picture">
     </main>
   </div>
 
-  <div  id="about" data-aos="fade-up" data-aos-easing="ease-in-out" class="about">
-    <div class="sea">
+  <div  id="about" class="about">
+    <div class="sea" data-aos="zoom-in-up" data-aos-easing="ease-in-out">
       <div class="circle-wrapper">
         <div class="bubble"></div>
         <div class="submarine-wrapper">
@@ -67,133 +67,101 @@
         </div>
       </div>
     </div>
-    <div class="about-info">
-      <h2>SOBRE MI...</h2>
+    <div class="about-info" data-aos="zoom-in-up" data-aos-easing="ease-in-out">
+      <h2>ABOUT ME...</h2>
       <div class="divider"></div>
-      <p>INTERESADO EN EL AREA DE FRONTEND, BASES DE DATOS Y DESARROLLO WEB <br>ME RELACIONO BASTANTE BIEN CON MI ENTORNO. <br>BUSCO APRENDER Y ADQUIRIR NUEVOS CONOCIMIENTOS EN EL AREA TECNOLOGICA.</p>
-      <button class="download-cv btn">Ver mas...</button>
+      <p>INTERESTED IN THE AREA OF FRONTEND, DATABASE AND WEB DEVELOPMENT <br>I RELATE QUITE WELL TO MY ENVIRONMENT. <br>I AM LOOKING TO LEARN AND ACQUIRE NEW KNOWLEDGE IN THE TECHNOLOGICAL AREA.</p>
+      <button class="download-cv btn">see more...</button>
     </div>
   </div>
   
   <div id="portfolio" class="portfolio">
     <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="portfolio-headings">
-      <h2>MI PORTAFOLIO</h2>
+      <h2>MY PORTFOLIO</h2>
       <div data-aos="fade-up" data-aos-easing="ease-in-out"  class="divider"></div>
     </div>
     
-    <div data-aos="fade-up" data-aos-easing="ease-in-out" class="container">
-      <button class="carousel__anterior" id="btn-left"><i class='bx bx-chevron-left' ></i></button>      
-      <div class="container__cards">
-        
-          <div class="card">
-        <div class="card__img1"></div>
-        <div class="card__title">
-          <h2>GamerSCerberus</h2>
+    <div data-aos="fade-up" data-aos-easing="ease-in-out" class="container">      
+      <div class="cards-list">
+      
+        <div class="card">
+          <div class="card_image"> <img src="../img/GamerSCerberus.jpg" /> </div>
+          <div class="card_title">
+            <h2>GamerSCerberus</h2>
+            <a href="https://github.com/JuanPablo18328/GamerSCerberus"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
-        <div class="card__projects-links">
-          <a href="https://github.com/JuanPablo18328/GamerSCerberus" target="_blank" ><i class="fa-brands fa-github"></i></a>
-          <a href="https://github.com/JuanPablo18328/GamerSCerberus"><i class="fa-solid fa-code"></i></a>
+      
+        <div class="card">
+          <div class="card_image">
+            <img src="../img/ApiPeliculas.jpg" />
+          </div>
+          <div class="card_title">
+            <h2>Peliculas Top</h2>
+            <a href="https://github.com/JuanPablo18328/ConsumirAPI"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
-        <div class="project-details-content">
-          <button class="project-details btn">Detalles</button>
+      
+        <div class="card">
+          <div class="card_image">
+            <img src="../img/chatbot.jpg" />
+          </div>
+          <div class="card_title">
+            <h2>ChatBot</h2>
+            <a href="https://github.com/JuanPablo18328/chatbot"><i class='bx bxl-github'></i></a>
+          </div>
         </div>
+      
+        <div class="card">
+          <div class="card_image">
+            <img src="../img/calculadora.jpg" />
           </div>
-          <div class="card">
-            <div class="card__img2"></div>
-            <div class="card__title">
-              <h2>Peliculas Top</h2>
-            </div>
-            <div class="card__projects-links">
-              <a href="https://github.com/JuanPablo18328/ConsumirAPI" target="_blank" ><i class="fa-brands fa-github"></i></a>
-              
-              <a href="https://github.com/JuanPablo18328/ConsumirAPI"><i class="fa-solid fa-code"></i></a>
-            </div>
-            <div class="project-details-content">
-              <button class="project-details btn">Detalles</button>
-            </div>
+          <div class="card_title">
+            <h2>Calculadora</h2>
+            <a href="https://github.com/JuanPablo18328/CalculadoraReact"><i class='bx bxl-github'></i></a>
           </div>
-          <div class="card">
-            <div class="card__img3"></div>
-            <div class="card__title">
-              <h2>Chatbot</h2>
-            </div>
-            <div class="card__projects-links">
-              <a href="https://github.com/JuanPablo18328/chatbot" target="_blank" ><i class="fa-brands fa-github"></i></a>
-              
-              <a href="https://github.com/JuanPablo18328/chatbot"><i class="fa-solid fa-code"></i></a>
-            </div>
-            <div class="project-details-content">
-              <button class="project-details btn">Detalles</button>
-            </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image">
+            <img src="../img/app-tareas.jpg" />
           </div>
-          <div class="card">
-            <div class="card__img4">
-            </div>
-            <div class="card__title">
-              <h2>Calculadora</h2>
-            </div>
-            <div class="card__projects-links">
-              <a href="https://github.com/JuanPablo18328/CalculadoraReact" target="_blank" ><i class="fa-brands fa-github"></i></a>
-              
-              <a href="https://github.com/JuanPablo18328/CalculadoraReact"><i class="fa-solid fa-code"></i></a>
-            </div>
-            <div class="project-details-content">
-              <button class="project-details btn">detalles</button>
-            </div>
+          <div class="card_title">
+            <h2>App de Tareas</h2>
+            <a href="https://github.com/JuanPablo18328/AppTareas"><i class='bx bxl-github'></i></a>
           </div>
-          <div class="card">
-            <div class="card__img5">
-            </div>
-            <div class="card__title">
-              <h2>App de Tareas</h2>
-            </div>
-            <div class="card__projects-links">
-              <a href="https://github.com/JuanPablo18328/AppTareas" target="_blank" ><i class="fa-brands fa-github"></i></a>
-              
-              <a href="https://github.com/JuanPablo18328/AppTareas"><i class="fa-solid fa-code"></i></a>
-            </div>
-            <div class="project-details-content">
-              <button class="project-details btn">detalles</button>
-            </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image">
+            <img src="../img/tic-tac-toe.jpg" />
           </div>
-          <div class="card">
-            <div class="card__img6">
-            </div>
-            <div class="card__title">
-              <h2>Tic-Tac-Toe</h2>
-            </div>
-            <div class="card__projects-links">
-              <a href="https://github.com/JuanPablo18328/tic-tac-toe" target="_blank" ><i class="fa-brands fa-github"></i></a>
-              
-              <a href="https://github.com/JuanPablo18328/tic-tac-toe"><i class="fa-solid fa-code"></i></a>
-            </div>
-            <div class="project-details-content">
-              <button class="project-details btn">detalles</button>
-            </div>
+          <div class="card_title">
+            <h2>Tic-Tac-Toe</h2>
+            <a href="https://github.com/JuanPablo18328/tic-tac-toe"><i class='bx bxl-github'></i></a>
           </div>
-        
+        </div>
+      
       </div>
-      <button class="carousel__siguiente" id="btn-right"><i class='bx bx-chevron-right'></i></button>
     </div>
-    <div role="tablist" class="carousel__indicadores"></div>
 
   </div>
 
   <div id="contact" class="contact-section">
     <div class="contact-headings">
-      <h2>CONTACTAME</h2>
+      <h2>CONTACT ME</h2>
       <div  class="divider"></div>
     </div>
 
     <div class="container-contact">
        <img src="./img/contact-img.svg" alt="juan">
       <div class="contact-form">
-        <h4>Enviame un mensaje...</h4>
+        <h4>Send me a message...</h4>
         <form class="form" id="form"> 
-          <input type="text" placeholder="Nombre" name="name">
+          <input type="text" placeholder="Name" name="name">
           <input type="email" placeholder="Email" name="email">
           <textarea placeholder="Escribe aqui tu mensaje..." name="message"></textarea>
-          <button type="submit" class="btn-submit btn" id="button" value="Enviar Email">Enviar Email</button>
+          <button type="submit" class="btn-submit btn" id="button" value="Enviar Email">Send Email</button>
         </form>
 
         <script type="text/javascript"
@@ -225,7 +193,6 @@
 
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

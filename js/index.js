@@ -39,34 +39,34 @@ window.addEventListener("scroll",()=>{
 })
 
 /* botones carrusel */
-window.addEventListener('load', function(){
-    new Glider(this.document.querySelector('.container__cards'), {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: true,
-        dots: '.carousel__indicadores',
-        arrows: {
-            prev: '.carousel__anterior',
-            next: '.carousel__siguiente'
-        },
-        responsive: [
-            {
-            breakpoint: 450,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-            },{
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4
-            }
-            }
-        ]
-    });
+// window.addEventListener('load', function(){
+//     new Glider(this.document.querySelector('.cards-list'), {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         draggable: true,
+//         dots: '.carousel__indicadores',
+//         arrows: {
+//             prev: '.carousel__anterior',
+//             next: '.carousel__siguiente'
+//         },
+//         responsive: [
+//             {
+//             breakpoint: 450,
+//             settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 2
+//             }
+//             },{
+//             breakpoint: 800,
+//             settings: {
+//                 slidesToShow: 5,
+//                 slidesToScroll: 5
+//             }
+//             }
+//         ]
+//     });
 
-});
+// });
 
 /* envio de formulario */
 

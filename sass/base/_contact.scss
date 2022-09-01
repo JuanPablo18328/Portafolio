@@ -73,6 +73,8 @@
             border: none;
             border-bottom: 1px solid #fff;
             color: #fff;
+
+            &::placeholder{color: #fff;}
         }
     
         textarea {
@@ -81,6 +83,8 @@
             color: #fff;
             padding: 1.5em;
             border: 1px solid #fff;
+
+            &::placeholder{color: #fff;}
         }
     
         .btn-submit {

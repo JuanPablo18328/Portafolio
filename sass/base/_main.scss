@@ -62,12 +62,13 @@ h1{
     outline: none;
     color: #fff;
     cursor: pointer;
+    transition: 1s;
 }
 .btn:hover{
     color: #fff;
     transform: scale(1.2);
     box-shadow: 1px 3px 11px -5px rgba(0, 0, 0, 0.69);
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .main img{
