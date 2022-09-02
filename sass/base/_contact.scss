@@ -69,11 +69,14 @@
 
 .contact-form{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     & h4{
         text-align: center;
         @include media(){   
         text-align: left;
-        padding-left: 50px;
     }
 
         @include mediaTablet() {
@@ -81,12 +84,10 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            position: absolute;
-            left: 36%;
         }
 
         @include mediaMin() {
-            left: 12%;
+            
         }
 
     }
@@ -102,7 +103,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            padding-left: 30px;
+            padding-left: 0px;
         
         }
 
@@ -111,7 +112,6 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            position: absolute;
             left: 36%;
         }
 

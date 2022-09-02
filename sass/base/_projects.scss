@@ -3,6 +3,7 @@
     background-image: url('../../img/banner-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 8rem;
     color: #fff;
     @include media(){
         @include flexbox(center,center,column);
@@ -78,16 +79,16 @@
     background: rgba(38, 22, 52, 0.8);
     opacity: 0;
     transition: .5s;
-
+    
     a {
         color: #fff;
         font-size: 1.7rem;
     }
 
-}
-
-.card_title h2 {
-    color: #fff;
+    h2 {
+        color: #fff;
+        font-size: 1.2rem;
+    }
 
 }
 
